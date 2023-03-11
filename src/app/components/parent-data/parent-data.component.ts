@@ -6,5 +6,8 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./parent-data.component.scss']
 })
 export class ParentDataComponent {
-  @Input() name: string = '';
+  @Input() userName: string = '';
+  @Input() userAge!: number;
+  @Input() userHobbies!: {esporte: string; instrumento: string}; 
+  // Sinal de ! significa que estou garatindo que esse dado vai ser iniciado;
 }
