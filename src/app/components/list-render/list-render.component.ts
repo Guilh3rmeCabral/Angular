@@ -7,4 +7,22 @@ import { Component } from '@angular/core';
 })
 export class ListRenderComponent {
 
+  animals = [
+    {
+      name: "Turca",
+      type: "Dog"
+    },
+    {
+      name: "Tom",
+      type: "Cat"
+    },
+    {
+      name: "Frida",
+      type: "Dog"
+    },
+    {
+      name: "Bob",
+      type: "Horse"
+    }
+  ]
 }
