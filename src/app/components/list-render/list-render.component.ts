@@ -24,7 +24,8 @@ export class ListRenderComponent {
   }
 
   removeAnimal(animal: Animal) {
-    this.animals = this.listService.remove(this.animals, animal)
+    this.animals = this.animals.filter((a) => animal.name !== a.name); //Removendo o animal visualmente da lista
+    this.listService.remove(animal.id).subscribe(); //chama o método que faz o delete no banco via http
   }
 
   getAnimals(): void {
